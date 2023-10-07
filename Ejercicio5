@@ -1,0 +1,16 @@
+print("Ejercicio5 : información de la biografía")
+# Solicitar al usuario que ingrese el significado completo
+significado_completo = input("Por favor, ingrese el significado completo: ")
+
+# Dividir las palabras en el significado completo
+palabras = significado_completo.split()
+
+# Inicializar una variable para almacenar el acrónimo
+acrónimo = ""
+
+# Recorrer las palabras y obtener la primera letra de cada palabra
+for palabra in palabras:
+    acrónimo += palabra[0].upper()  # Tomar la primera letra y convertirla a mayúscula
+
+# Mostrar el acrónimo resultante
+print(f"El acrónimo es: {acrónimo}")

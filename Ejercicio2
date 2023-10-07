@@ -1,0 +1,26 @@
+
+print("Ejercicio 2: MAD LIBS GAME")
+
+BUCLE = 1
+
+while (BUCLE < 10):
+
+    Sustantivo = input("Escoge un sustantivo: ")
+    Plu_Sustantivo = input("Escoge un sustantivo plural: ")
+    Sustantivo2 = input("Escoge un sustantivo: ")
+    Lugar = input("Nombra un lugar: ")
+    Adjetivo = input("Escoge un adjetivo (Palabra Descriptiva): ")
+    Sustantivo3 = input("Elige un sustantivo: ")
+
+    print ("------------------------------------------")
+    print (Sustantivo, Plu_Sustantivo)
+    print (Sustantivo2)
+    print (Plu_Sustantivo,Lugar)
+    print (Adjetivo,".")
+    print ()
+    print (Sustantivo3)
+    print ("Completado.")
+    print ("------------------------------------------")
+
+    
+    BUCLE = BUCLE + 1

@@ -1,0 +1,10 @@
+print("Ejercicio 1: PAR O IMPAR")
+
+# Pedir al usuario un número entre 1 y 1000
+numero = int(input("Ingresa un número entre 1 y 1000: "))
+
+# Verificar si el número es par o impar
+if numero % 2 == 0:
+    print(f"El número {numero} es par.")
+else:
+    print(f"El número {numero} es impar.")

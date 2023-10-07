@@ -1,0 +1,19 @@
+print("Ejercicio 9 : Propina")
+
+
+# Solicitar al usuario el monto total de la factura
+monto_factura = float(input("Ingrese el monto total de la factura: "))
+
+# Calcular la propina del 18%
+propina_18 = monto_factura * 0.18
+
+# Calcular la propina del 20%
+propina_20 = monto_factura * 0.20
+
+# Calcular la propina del 25%
+propina_25 = monto_factura * 0.25
+
+# Mostrar las propinas calculadas
+print(f"Propina del 18%: ${propina_18:.2f}")
+print(f"Propina del 20%: ${propina_20:.2f}")
+print(f"Propina del 25%: ${propina_25:.2f}")

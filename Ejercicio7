@@ -1,0 +1,31 @@
+print("Ejercicio 7 : Adivina el numero")
+import random
+
+# Generar un número aleatorio entre 1 y 50
+numero_secreto = random.randint(1, 50)
+
+# Inicializar un contador de intentos
+intentos = 0
+
+print("¡Bienvenido al juego de adivinar el número!")
+
+while True:
+    try:
+        # Solicitar al usuario que adivine un número
+        adivinanza = int(input("Adivina un número entre 1 y 50: "))
+    except ValueError:
+        print("Por favor, ingrese un número válido.")
+        continue
+
+    # Verificar si el número está dentro del rango adecuado
+    if 1 <= adivinanza <= 50:
+        intentos += 1
+
+        # Verificar si adivinaron el número correcto
+        if adivinanza == numero_secreto:
+            print(f"¡Felicidades! Adivinaste el número {numero_secreto} en {intentos} intentos.")
+            break
+        else:
+            print("Número incorrecto. Inténtalo de nuevo.")
+    else:
+        print("El número está fuera del rango. Por favor, elige un número entre 1 y 50.")

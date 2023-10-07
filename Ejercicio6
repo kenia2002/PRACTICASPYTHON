@@ -1,0 +1,31 @@
+print("Ejercicio 6 : piedra/papel/tijeras")
+
+import random
+
+# Definir las opciones del juego
+opciones = ["piedra", "papel", "tijeras"]
+
+# Solicitar la elección del jugador
+jugador = input("Elige piedra, papel o tijeras: ").lower()  # Convertir a minúsculas
+
+# Verificar si la elección del jugador es válida
+if jugador not in opciones:
+    print("Elección no válida. Por favor, elige entre piedra, papel o tijeras.")
+else:
+    # Generar la elección aleatoria del oponente
+    oponente = random.choice(opciones)
+
+    # Mostrar las elecciones
+    print(f"Jugador elige: {jugador}")
+    print(f"Oponente elige: {oponente}")
+
+    # Determinar el resultado del juego
+    if jugador == oponente:
+        print("¡Es un empate!")
+    elif (jugador == "piedra" and oponente == "tijeras") or \
+         (jugador == "papel" and oponente == "piedra") or \
+         (jugador == "tijeras" and oponente == "papel"):
+        print("¡Ganaste!")
+    else:
+        print("¡El oponente gana!")
+

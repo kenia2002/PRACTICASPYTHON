@@ -1,0 +1,26 @@
+print("Ejercicio 8 : Palíndromo")
+
+# Función para verificar si una palabra es un palíndromo
+def es_palindromo(palabra):
+    palabra = palabra.lower()  # Convertir a minúsculas para hacer la comparación insensible a mayúsculas
+    return palabra == palabra[::-1]
+
+# Solicitar al usuario que ingrese cinco palabras
+palabras = []
+for i in range(5):
+    palabra = input(f"Ingrese la palabra #{i+1}: ")
+    palabras.append(palabra)
+
+# Verificar si alguna de las palabras es un palíndromo
+palindromos = []
+for palabra in palabras:
+    if es_palindromo(palabra):
+        palindromos.append(palabra)
+
+# Mostrar los resultados
+if len(palindromos) > 0:
+    print("Las siguientes palabras son palíndromos:")
+    for palindromo in palindromos:
+        print(palindromo)
+else:
+    print("Ninguna de las palabras es un palíndromo.")

@@ -1,0 +1,31 @@
+print("Ejercicio 11 : Canciones")
+# Lista de 10 canciones con sus letras
+canciones = [
+    "Canción 1 - Letra de la canción 1.",
+    "Canción 2 - Letra de la canción 2.",
+    "Canción 3 - Letra de la canción 3.",
+    "Canción 4 - Letra de la canción 4.",
+    "Canción 5 - Letra de la canción 5.",
+    "Canción 6 - Letra de la canción 6.",
+    "Canción 7 - Letra de la canción 7.",
+    "Canción 8 - Letra de la canción 8.",
+    "Canción 9 - Letra de la canción 9.",
+    "Canción 10 - Letra de la canción 10."
+]
+
+# Mostrar las opciones de canciones al usuario
+print("Elija una canción de la lista:")
+for i, cancion in enumerate(canciones, start=1):
+    print(f"{i}. {cancion.split(' - ')[0]}")
+
+# Solicitar al usuario que elija una canción
+try:
+    opcion = int(input("Ingrese el número de la canción que desea ver: "))
+    if 1 <= opcion <= len(canciones):
+        print("\nLetra de la canción seleccionada:")
+        print(canciones[opcion - 1].split(' - ')[1])
+    else:
+        print("Opción no válida. Por favor, elija un número dentro del rango.")
+except ValueError:
+    print("Entrada no válida. Por favor, ingrese un número válido.")
+

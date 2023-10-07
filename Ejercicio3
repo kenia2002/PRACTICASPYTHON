@@ -1,0 +1,13 @@
+print("Ejercicio 3: El recuento de palabras")
+
+# Solicitar una entrada de texto al usuario
+texto = input("Por favor, ingrese un texto: ")
+
+# Dividir el texto en palabras
+palabras = texto.split()
+
+# Contar el número de palabras
+cantidad_palabras = len(palabras)
+
+# Mostrar el resultado
+print(f"El texto contiene {cantidad_palabras} palabras.")

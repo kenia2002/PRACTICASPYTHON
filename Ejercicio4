@@ -1,0 +1,35 @@
+print("Ejercicio 4: información de la biografía")
+
+# Solicitar información personal al usuario
+nombre = input("¿Cómo te llamas? ")
+
+# Verificar si el nombre es válido (no está vacío)
+while not nombre:
+    nombre = input("Por favor, ingrese un nombre válido: ")
+
+edad = input("¿Cuál es tu edad? ")
+
+# Verificar si la edad es un número entero válido
+while not edad.isdigit():
+    edad = input("Por favor, ingrese una edad válida: ")
+
+edad = int(edad)
+
+direccion = input("¿Cuál es tu dirección? ")
+
+# Verificar si la dirección no está vacía
+while not direccion:
+    direccion = input("Por favor, ingrese una dirección válida: ")
+
+email = input("¿Cuál es tu dirección de correo electrónico? ")
+
+# Verificar si el correo electrónico contiene "@" y "."
+while "@" not in email or "." not in email:
+    email = input("Por favor, ingrese una dirección de correo electrónico válida: ")
+
+# Imprimir un resumen de la información
+print("\nResumen de la información ingresada:")
+print(f"Nombre: {nombre}")
+print(f"Edad: {edad}")
+print(f"Dirección: {direccion}")
+print(f"Correo Electrónico: {email}")

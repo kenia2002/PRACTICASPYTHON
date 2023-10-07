@@ -1,0 +1,18 @@
+print("Ejercicio 10 : Correo")
+
+
+email = input("Por favor, ingrese su dirección de correo electrónico: ")
+
+
+nombre_usuario, dominio = email.split('@')
+
+
+dominios_populares = ["gmail.com", "yahoo.com", "hotmail.com"]
+
+if dominio.lower() in dominios_populares:
+    mensaje = f"¡Hola {nombre_usuario.capitalize()}, veo que tu correo está registrado en {dominio.capitalize()}. ¡Eso es genial!"
+else:
+    mensaje = f"¡Hola {nombre_usuario.capitalize()}, parece que tienes tu propia configuración personalizada en {dominio.capitalize()}. ¡Impresionante!"
+
+# Mostrar el mensaje correspondiente
+print(mensaje)
